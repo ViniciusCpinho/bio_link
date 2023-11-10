@@ -110,7 +110,6 @@ class MyApp extends StatelessWidget {
   }
 
   _launchWhatsAppURL() async {
-    // Substitua 'phoneNumber' pelo número de telefone, incluindo o código do país
     String whatsappUrl = 'https://wa.me/+5566999375863';
 
     if (await canLaunch(whatsappUrl)) {
