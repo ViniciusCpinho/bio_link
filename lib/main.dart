@@ -1,3 +1,5 @@
+//flutter run -d chrome --web-renderer html
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
                 ),
                 SizedBox(height: 16.0),
 
-                Text('Eu sou um texto'),
+                Text('Vinicius Luz'),
                 SizedBox(height: 16.0),
 
                 ElevatedButton(
@@ -78,7 +80,7 @@ class MyApp extends StatelessWidget {
   }
 
   _launchInstagramURL() async {
-    String instagramUrl = 'https://www.instagram.com/viniciusc.pinheiro/';
+    String instagramUrl = 'https://www.instagram.com/viniciusc.pinheiro/?next=%2F';
 
     if (await canLaunch(instagramUrl)) {
       await launch(instagramUrl);
